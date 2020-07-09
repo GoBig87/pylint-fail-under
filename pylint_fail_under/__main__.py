@@ -35,7 +35,7 @@ def main():
             logger.warning("no fail_under argument provided, defaulting to 10.0")
             fail_under_value = 10.0
 
-        results = Run(args=cmd_line_args, do_exit=False)
+        results = Run(args=cmd_line_args, exit=False)
         sys.stdout.flush()
 
         try:
